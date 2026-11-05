@@ -1,6 +1,9 @@
 package dev.pessotto;
 
+import java.sql.Connection;
+import java.sql.SQLException;
 import dev.pessotto.controller.BibliotecaController;
+import dev.pessotto.data.DBConnection;
 import dev.pessotto.model.Biblioteca;
 import dev.pessotto.view.cli.BibliotecaView;
 
@@ -26,5 +29,19 @@ public final class Main
 
         controller.buscarLivro("Dom Casmurro");
         controller.buscarLivro("Livro Inexistente");
+
+        {
+            IO.print("\033[H\033[J");
+        }
+
+        try (Connection c = DBConnection.connection())
+        {
+            System.out.println("Conectou ao MySQL!");
+            c.close();
+        }
+        catch (SQLException e)
+        {
+            System.out.println("Erro: " + e.getMessage());
+        }
     }
 }
