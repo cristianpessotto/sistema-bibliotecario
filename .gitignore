@@ -2,3 +2,4 @@ bin/
 /**/*.jar
 config.properties
 sistema-bibliotecario.sql
+/src/dev/pessotto/view/gui
