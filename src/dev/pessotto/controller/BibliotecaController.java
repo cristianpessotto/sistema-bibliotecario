@@ -20,7 +20,7 @@ public class BibliotecaController
 
     public void cadastrarLivro(String titulo, String autor, int ano)
     {
-        var livro = new Livro(titulo, autor, ano, true);
+        var livro = new Livro(titulo, autor, ano);
         biblioteca.adicionarLivro(livro);
         BibliotecaView.exibirMensagem("Livro cadastrado: %s".formatted(livro));
     }

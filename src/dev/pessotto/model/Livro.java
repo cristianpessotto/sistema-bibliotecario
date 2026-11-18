@@ -6,14 +6,26 @@ public class Livro
     private String  autor;
     private Integer ano;
     private Boolean disponivel;
+    private Integer id;
 
-    public Livro(String titulo, String autor, Integer ano, Boolean disponivel)
+    public Livro(String titulo, String autor, int ano)
     {
+        this.titulo     = titulo;
+        this.autor      = autor;
+        this.ano        = ano;
+        this.disponivel = true;
+    }
+
+    // construtor usado ao LER do banco
+    public Livro(int id, String titulo, String autor, int ano, boolean disponivel)
+    {
+        this.id         = id;
         this.titulo     = titulo;
         this.autor      = autor;
         this.ano        = ano;
         this.disponivel = disponivel;
     }
+
 
     public String getTitulo()
     {
@@ -48,6 +60,17 @@ public class Livro
     public Boolean getDisponivel()
     {
         return this.disponivel;
+    }
+
+
+    public Integer getId()
+    {
+        return id;
+    }
+
+    public void setId(Integer id)
+    {
+        this.id = id;
     }
 
     public void setDisponivel(Boolean disponivel)
