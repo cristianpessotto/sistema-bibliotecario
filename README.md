@@ -15,7 +15,7 @@ Sistema bibliotecário simples feito em sala de aula na matéria de Programaçã
 
 ## Como executar
 
-A execução do projeto exige que você tenha a JDK e MySQL instalados no seu computador. Você pode usar o Maven Wrapper que vem junto com o projeto para executar os comandos abaixo, basta apenas troca os comandos de `mvn` para `mvnw.cmd` e `mvnw.sh`.
+A execução do projeto exige que você tenha a JDK e MySQL instalados no seu computador. Você pode usar o Maven Wrapper que vem junto com o projeto para executar os comandos abaixo, basta apenas troca os comandos de `mvn` para `mvnw.cmd` e `mvnw`.
 
 ### Clonagem do repositório
 
